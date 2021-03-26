@@ -1,4 +1,4 @@
-var pps = 700;
+var pps = 350;
 var timePassed = delta_time/1000000;
 var pts = pps * timePassed;
 
