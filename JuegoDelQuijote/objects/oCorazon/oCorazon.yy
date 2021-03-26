@@ -21,10 +21,10 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":true,"eventNum":87,"eventType":5,"collisionObjectId":null,"parent":{"name":"oCorazon","path":"objects/oCorazon/oCorazon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":87,"eventType":10,"collisionObjectId":null,"parent":{"name":"oCorazon","path":"objects/oCorazon/oCorazon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":87,"eventType":9,"collisionObjectId":null,"parent":{"name":"oCorazon","path":"objects/oCorazon/oCorazon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":83,"eventType":9,"collisionObjectId":null,"parent":{"name":"oCorazon","path":"objects/oCorazon/oCorazon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":83,"eventType":10,"collisionObjectId":null,"parent":{"name":"oCorazon","path":"objects/oCorazon/oCorazon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":65,"eventType":9,"collisionObjectId":null,"parent":{"name":"oCorazon","path":"objects/oCorazon/oCorazon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":68,"eventType":9,"collisionObjectId":null,"parent":{"name":"oCorazon","path":"objects/oCorazon/oCorazon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
