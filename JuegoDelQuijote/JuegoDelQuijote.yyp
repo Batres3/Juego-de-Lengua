@@ -3,6 +3,7 @@
     {"id":{"name":"oJugador","path":"objects/oJugador/oJugador.yy",},"order":0,},
     {"id":{"name":"MACRO","path":"scripts/MACRO/MACRO.yy",},"order":1,},
     {"id":{"name":"sJugadorCorriendo","path":"sprites/sJugadorCorriendo/sJugadorCorriendo.yy",},"order":1,},
+    {"id":{"name":"sQuijoteEnCaballo","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"order":15,},
     {"id":{"name":"PlayerAnimateScript","path":"scripts/PlayerAnimateScript/PlayerAnimateScript.yy",},"order":0,},
     {"id":{"name":"sJugador","path":"sprites/sJugador/sJugador.yy",},"order":0,},
     {"id":{"name":"Sala1","path":"rooms/Sala1/Sala1.yy",},"order":0,},
