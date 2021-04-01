@@ -1,3 +1,3 @@
-spriteRun = sJugadorCorriendo;
-spriteIdle = sJugador;
+spriteRun = sQuijoteEnCaballo;
+spriteIdle = sQuijoteEnCaballoQuieto;
 localFrame = 0;

@@ -1,11 +1,10 @@
 {
   "resources": [
     {"id":{"name":"oJugador","path":"objects/oJugador/oJugador.yy",},"order":0,},
+    {"id":{"name":"sQuijoteEnCaballoQuieto","path":"sprites/sQuijoteEnCaballoQuieto/sQuijoteEnCaballoQuieto.yy",},"order":15,},
     {"id":{"name":"MACRO","path":"scripts/MACRO/MACRO.yy",},"order":1,},
     {"id":{"name":"sJugadorCorriendo","path":"sprites/sJugadorCorriendo/sJugadorCorriendo.yy",},"order":1,},
-    {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},"order":3,},
     {"id":{"name":"sQuijoteEnCaballo","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"order":2,},
-    {"id":{"name":"Sprite5","path":"sprites/Sprite5/Sprite5.yy",},"order":4,},
     {"id":{"name":"PlayerAnimateScript","path":"scripts/PlayerAnimateScript/PlayerAnimateScript.yy",},"order":0,},
     {"id":{"name":"sJugador","path":"sprites/sJugador/sJugador.yy",},"order":0,},
     {"id":{"name":"Sala1","path":"rooms/Sala1/Sala1.yy",},"order":0,},
@@ -48,7 +47,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.1.542",
   },
   "resourceVersion": "1.4",
   "name": "JuegoDelQuijote",

@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "sJugador",
-    "path": "sprites/sJugador/sJugador.yy",
+    "name": "sQuijoteEnCaballoQuieto",
+    "path": "sprites/sQuijoteEnCaballoQuieto/sQuijoteEnCaballoQuieto.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sJugador",
-    "path": "sprites/sJugador/sJugador.yy",
+    "name": "sQuijoteEnCaballoQuieto",
+    "path": "sprites/sQuijoteEnCaballoQuieto/sQuijoteEnCaballoQuieto.yy",
   },
   "persistent": false,
   "parentObjectId": null,

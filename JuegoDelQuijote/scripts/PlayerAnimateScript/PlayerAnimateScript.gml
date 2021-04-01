@@ -1,4 +1,4 @@
-function PlayerAnimateScript(){
+ function PlayerAnimateScript(){
   var _cardinalDirection = round(direction/90);
   var _totalFrames = sprite_get_number(sprite_index)/4;
 

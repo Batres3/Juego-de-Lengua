@@ -1,4 +1,4 @@
-pps = 100;
+ pps = 100;
 timePassed = delta_time/1000000;
 pts = pps * timePassed;
 
