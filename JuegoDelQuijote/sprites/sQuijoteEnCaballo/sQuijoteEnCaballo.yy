@@ -72,6 +72,12 @@
     {"compositeImage":{"FrameId":{"name":"76f895d1-a924-4294-9ffe-da26a688776f","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"76f895d1-a924-4294-9ffe-da26a688776f","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"LayerId":{"name":"09b17d7b-b897-459e-a06a-bd807617d697","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sQuijoteEnCaballo","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","name":"76f895d1-a924-4294-9ffe-da26a688776f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"192d9c81-ebda-4992-90c7-4b7a0d8760b9","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"192d9c81-ebda-4992-90c7-4b7a0d8760b9","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"LayerId":{"name":"09b17d7b-b897-459e-a06a-bd807617d697","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sQuijoteEnCaballo","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","name":"192d9c81-ebda-4992-90c7-4b7a0d8760b9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2e9d563d-c472-4e96-bc31-81c9eabf9407","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2e9d563d-c472-4e96-bc31-81c9eabf9407","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"LayerId":{"name":"09b17d7b-b897-459e-a06a-bd807617d697","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sQuijoteEnCaballo","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","name":"2e9d563d-c472-4e96-bc31-81c9eabf9407","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sQuijoteEnCaballo","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},
@@ -81,7 +87,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 16.0,
+    "length": 18.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -102,6 +108,8 @@
             {"id":"4230e03c-5e86-470f-87ca-1ba1bc19d87b","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"876dd256-5d4f-4371-afc1-f82049be8147","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"22a923c1-7b9b-44b2-9fe8-c267b9e8085d","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d207e18c-a7ae-4563-9cca-66b0f55e38f8","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5549d88f-d00e-4359-9c60-b0eeaf6fb6e2","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76f895d1-a924-4294-9ffe-da26a688776f","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0aa5a243-e94a-41d4-9907-1f2e29d04b8b","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"192d9c81-ebda-4992-90c7-4b7a0d8760b9","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a64e04c5-ab35-4a71-81a3-8dc6975268d8","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2e9d563d-c472-4e96-bc31-81c9eabf9407","path":"sprites/sQuijoteEnCaballo/sQuijoteEnCaballo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
