@@ -19,5 +19,9 @@ if (_oldSprite != sprite_index) localFrame = 0;
 
 PlayerAnimateScript();
 
-
+//Roll
+if(state == PlayerStateNoHorse and keyboard_check_pressed(vk_space)) {
+	state = PlayerStateRoll;
+	moveDistRemaining = distanceRoll;
+}
 }

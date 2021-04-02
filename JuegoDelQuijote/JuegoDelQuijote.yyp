@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"PlayerStateRoll","path":"scripts/PlayerStateRoll/PlayerStateRoll.yy",},"order":5,},
     {"id":{"name":"sQuijoteSinCaballoCorriendo","path":"sprites/sQuijoteSinCaballoCorriendo/sQuijoteSinCaballoCorriendo.yy",},"order":6,},
     {"id":{"name":"oJugador","path":"objects/oJugador/oJugador.yy",},"order":0,},
     {"id":{"name":"sQuijoteEnCaballoQuieto","path":"sprites/sQuijoteEnCaballoQuieto/sQuijoteEnCaballoQuieto.yy",},"order":4,},
@@ -14,6 +15,7 @@
     {"id":{"name":"PlayerAnimateScript","path":"scripts/PlayerAnimateScript/PlayerAnimateScript.yy",},"order":0,},
     {"id":{"name":"sQuijoteSinCaballo","path":"sprites/sQuijoteSinCaballo/sQuijoteSinCaballo.yy",},"order":5,},
     {"id":{"name":"sJugador","path":"sprites/sJugador/sJugador.yy",},"order":0,},
+    {"id":{"name":"sRodar","path":"sprites/sRodar/sRodar.yy",},"order":7,},
     {"id":{"name":"Sala1","path":"rooms/Sala1/Sala1.yy",},"order":0,},
   ],
   "Options": [
