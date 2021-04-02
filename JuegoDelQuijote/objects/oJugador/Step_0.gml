@@ -10,9 +10,11 @@ var _oldSprite = sprite_index;
 if (xdir != 0 or ydir != 0){
 	
 	var dir = point_direction(0, 0, xdir, ydir);
+	hSpeed = lengthdir_x(pts, dir);
+    vSpeed = lengthdir_y(pts, dir);
 	
-	x += lengthdir_x(pts, dir);
-	y += lengthdir_y(pts ,dir);
+	PlayerCollision();
+	
 	direction = dir;
 	sprite_index = spriteRun;
 }else {
@@ -21,3 +23,6 @@ if (xdir != 0 or ydir != 0){
 if (_oldSprite != sprite_index) localFrame = 0;
 
 PlayerAnimateScript();
+
+//x += lengthdir_x(pts, dir);
+//y += lengthdir_y(pts ,dir);
