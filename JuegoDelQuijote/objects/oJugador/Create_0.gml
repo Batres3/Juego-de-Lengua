@@ -1,5 +1,10 @@
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
-spriteRun = sQuijoteEnCaballo;
-spriteIdle = sQuijoteEnCaballoQuieto;
+speedWalk = 1;
+speedHorse = 2;
+
+spriteRun = sQuijoteSinCaballoCorriendo;
+spriteIdle = sQuijoteSinCaballo;
+spriteRunH = sQuijoteEnCaballo;
+spriteIdleH = sQuijoteEnCaballoQuieto;
 localFrame = 0;
