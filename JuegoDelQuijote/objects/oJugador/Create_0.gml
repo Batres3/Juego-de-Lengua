@@ -1,7 +1,9 @@
+state = PlayerStateNoHorse;
+
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
-speedWalk = 1;
-speedHorse = 2;
+speedWalk = 0.8;
+speedHorse = 1.2;
 
 spriteRun = sQuijoteSinCaballoCorriendo;
 spriteIdle = sQuijoteSinCaballo;
