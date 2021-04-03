@@ -11,4 +11,4 @@ if (keyboard_check_pressed(ord("H")) and state == PlayerStateHorse) {
 	state = PlayerStateNoHorse;
 } else if (keyboard_check_pressed(ord("H"))) state = PlayerStateHorse;
 
-script_execute(state);
+if (!global.gamePaused) script_execute(state);

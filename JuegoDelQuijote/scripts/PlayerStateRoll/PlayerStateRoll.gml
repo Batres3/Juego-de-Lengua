@@ -17,5 +17,9 @@ function PlayerStateRoll(){
 		state = PlayerStateNoHorse;
 	}
 	
+	if(_collided){
+		state = PlayerStateNoHorse;
+		ScreenShake(4, 15);
+	}
 	
 }
