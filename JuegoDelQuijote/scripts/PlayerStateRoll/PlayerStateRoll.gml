@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function PlayerStateRoll(){
 	hSpeed = lengthdir_x(speedRoll, direction) * speedRoll;
 	vSpeed = lengthdir_y(speedRoll, direction) * speedRoll;
@@ -19,7 +17,7 @@ function PlayerStateRoll(){
 	
 	if(_collided){
 		state = PlayerStateNoHorse;
-		ScreenShake(4, 15);
+		ScreenShake(4, 16);
 	}
 	
 }
