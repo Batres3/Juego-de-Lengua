@@ -17,6 +17,13 @@ if (_oldSprite != sprite_index) localFrame = 0;
 
 PlayerAnimateScript();
 
+//Attack Key Logic
+if (mouse_check_button_pressed(mb_left)){
+	state = PlayerStateAttack;
+	stateAttack = AttackSlash;
+}
+
+
 //Activate key logic
 if(keyboard_check_pressed(vk_space)) {
 	// Check for an entity to activate
@@ -40,4 +47,5 @@ if(keyboard_check_pressed(vk_space)) {
 		}
 	}
 }
+
 }
