@@ -16,7 +16,8 @@ function PlayerStateRoll(){
 	}
 	
 	if(_collided){
-		state = PlayerStateNoHorse;
+		state = PlayerStateBonk;
+		moveDistRemaining = distanceBonk;
 		ScreenShake(4, 16);
 	}
 	
