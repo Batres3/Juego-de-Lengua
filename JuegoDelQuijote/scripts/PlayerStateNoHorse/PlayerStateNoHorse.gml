@@ -17,9 +17,27 @@ if (_oldSprite != sprite_index) localFrame = 0;
 
 PlayerAnimateScript();
 
-//Roll
-if(state == PlayerStateNoHorse and keyboard_check_pressed(vk_space)) {
-	state = PlayerStateRoll;
-	moveDistRemaining = distanceRoll;
+//Activate key logic
+if(keyboard_check_pressed(vk_space)) {
+	// Check for an entity to activate
+	// If there is nothing, or there is something with no script, roll
+	// Otherwise, there is somthing with a script, activate
+	// If the thing we activate is an NPC, make it face towards us
+	
+	var _activateX = lengthdir_x(10, direction);
+	var _activateY = lengthdir_y(10, direction);
+	activate = instance_position(x+_activateX, y-8+_activateY, pEntity);
+	
+	if (activate == noone or activate.entityActivateScript == -1){
+		state = PlayerStateRoll;
+	    moveDistRemaining = distanceRoll;
+	} else {
+		ScriptExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
+		
+		if(activate.entityNPC){
+			activate.direction = point_direction(x, y, other.x, other.y);
+			activate.image_index = CARDINAL_DIR;
+		}
+	}
 }
 }

@@ -1,4 +1,4 @@
-pps = 70;
+ pps = 70;
 timePassed = delta_time/1000000;
 pts = pps * timePassed;
 
@@ -12,3 +12,5 @@ if (keyboard_check_pressed(ord("H")) and state == PlayerStateHorse) {
 } else if (keyboard_check_pressed(ord("H"))) state = PlayerStateHorse;
 
 if (!global.gamePaused) script_execute(state);
+
+depth = -bbox_bottom;
