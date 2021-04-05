@@ -36,7 +36,7 @@ if(keyboard_check_pressed(vk_space)) {
 		
 		if(activate.entityNPC){
 			activate.direction = point_direction(x, y, other.x, other.y);
-			activate.image_index = CARDINAL_DIR;
+			activate.image_index = -CARDINAL_DIR;
 		}
 	}
 }
