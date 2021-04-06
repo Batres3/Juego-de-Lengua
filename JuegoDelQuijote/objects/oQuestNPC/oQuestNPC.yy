@@ -31,8 +31,8 @@
     {"propertyId":{"name":"entityNPC","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "Entities",
+    "path": "folders/Objetos/Entities.yy",
   },
   "resourceVersion": "1.0",
   "name": "oQuestNPC",

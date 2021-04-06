@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Entities",
+    "path": "folders/Sprites/Entities.yy",
   },
   "resourceVersion": "1.0",
   "name": "sSignpost",
