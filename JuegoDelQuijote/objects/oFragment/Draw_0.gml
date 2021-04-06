@@ -1,5 +1,3 @@
-draw_sprite(sShadow, 0, x, y);
-
 draw_sprite_ext(
 	sprite_index,
 	image_index,
@@ -9,4 +7,4 @@ draw_sprite_ext(
 	image_yscale,
 	image_angle,
 	image_blend,
-	image_alpha);
+	image_alpha); 
