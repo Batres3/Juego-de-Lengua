@@ -2,6 +2,8 @@
   "resources": [
     {"id":{"name":"sQuijoteSinCaballoCorriendo","path":"sprites/sQuijoteSinCaballoCorriendo/sQuijoteSinCaballoCorriendo.yy",},"order":6,},
     {"id":{"name":"oJugador","path":"objects/oJugador/oJugador.yy",},"order":0,},
+    {"id":{"name":"sLibrosQuemar","path":"sprites/sLibrosQuemar/sLibrosQuemar.yy",},"order":9,},
+    {"id":{"name":"sLibrosSalvar","path":"sprites/sLibrosSalvar/sLibrosSalvar.yy",},"order":8,},
     {"id":{"name":"oText","path":"objects/oText/oText.yy",},"order":0,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":0,},
     {"id":{"name":"sQuijoteEnCaballoQuieto","path":"sprites/sQuijoteEnCaballoQuieto/sQuijoteEnCaballoQuieto.yy",},"order":4,},
