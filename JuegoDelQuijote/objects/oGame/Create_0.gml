@@ -1,5 +1,6 @@
 // Initialise & Globals
 randomize();
+global.AllItems = ds_grid_create(0, Book.Height);
 
 global.gamePaused = false;
 global.textSpeed = 0.75;

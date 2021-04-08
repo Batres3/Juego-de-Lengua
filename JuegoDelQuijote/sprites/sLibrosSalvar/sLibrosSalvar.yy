@@ -85,8 +85,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Books",
+    "path": "folders/Sprites/Books.yy",
   },
   "resourceVersion": "1.0",
   "name": "sLibrosSalvar",

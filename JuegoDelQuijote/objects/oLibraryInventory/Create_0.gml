@@ -1,0 +1,9 @@
+menuWidth = 6;
+menuHeight = 5;
+itemSeperation = 5;
+itemScale = 0.5;
+
+cameraX = camera_get_view_x(view_camera[0]);
+cameraY = camera_get_view_y(view_camera[0]);
+cameraMiddleX = camera_get_view_width(view_camera[0]) * 0.5
+cameraMiddleY = camera_get_view_height(view_camera[0]) * 0.5

@@ -181,8 +181,6 @@ function DropItems(x, y, items){
 	}else instance_create_layer(x, y, "Instances", items[0]);
 }
 
-
-
 // Execute an array
 /// @desc execute script with argument array
 /// @returns any
