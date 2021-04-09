@@ -13,7 +13,7 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 	var itemY = bottomRow - ((menuHeight-1) * itemSeperationY);
 	var sprite = global.AllItems[# i, Book.Sprite];
 	
-	if (i > menuWidth){
+	if (i >= menuWidth){
 		itemX = cameraX + 28 + ((i - (menuWidth * columnNow)) * itemSeperationX);
 		itemY = bottomRow - ((menuHeight - columnNow - 1) * itemSeperationY);
 	}
