@@ -29,6 +29,7 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 	//Clicked on an item
 	if (mouse_check_button_pressed(mb_left) && !showDescription){
 		sequence = layer_sequence_create("InventoryDesc", cameraMiddleX, cameraMiddleY, sqDescriptionAnimation);
+		sequenceDone = false;
 		
 		//Show item details
 		if (!instance_exists(global.AllItems[# i, Book.Object])) {
@@ -37,7 +38,27 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 	}
 	}
 	}
+	//Save book
+	if (point_in_rectangle(mouse_x,mouse_y, cameraX + 200, cameraY + 150, cameraX + 208, cameraY + 158) and mouse_check_button_pressed(mb_left)){
+		layer_sequence_headdir(sequence, seqdir_left);
+		layer_sequence_play(sequence);
+		instance_destroy(currentItem);
+		showDescription = false;
+		exit_ = true;
+		//Execute Save script
+	}
 	
+	//Destroy Book
+	if (point_in_rectangle(mouse_x,mouse_y, cameraX + 220, cameraY + 150, cameraX + 228, cameraY + 158) and mouse_check_button_pressed(mb_left)){
+		layer_sequence_headdir(sequence, seqdir_left);
+		layer_sequence_play(sequence);
+		instance_destroy(currentItem);
+		showDescription = false;
+		exit_ = true;
+		//Execute Destroy script
+	}
+	
+	//Close window
 	if (point_in_rectangle(mouse_x, mouse_y, cameraX + 240, cameraY + 10, cameraX + 260, cameraY + 30) and mouse_check_button_pressed(mb_left)){
 		layer_sequence_headdir(sequence, seqdir_left);
 		layer_sequence_play(sequence);

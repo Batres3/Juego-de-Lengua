@@ -5,7 +5,9 @@ itemSeperationY = 21;
 itemScale = 0.5;
 currentItem = undefined;
 showDescription = false;
+sequenceDone = true;
 depth = 6;
+exit_ = false;
 
 cameraX = camera_get_view_x(view_camera[0]);
 cameraY = camera_get_view_y(view_camera[0]);
