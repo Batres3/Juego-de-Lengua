@@ -1,5 +1,5 @@
 /// @desc Entity Loop
 if (!global.gamePaused){
-	depth = -bbox_bottom;
+	depth = 20;
 }
 flash = max(flash - 0.04, 0);

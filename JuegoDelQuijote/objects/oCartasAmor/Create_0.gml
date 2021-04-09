@@ -4,9 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-name = "The Feynman Lectures on Physics";
-description = "Una recolección de las clases que dio Richard Feynman en CALTECH.\nParecen tener algún poder eléctrico.";
-magic = Power.Lightning;
+name = "Cartas de amor al cielo";
+description = "Libro de adriana, ni puta idea.\nParece tener algún poder de agua";
+magic = Power.Water;
 manaCost = 20;
 power1 = "Lightning Strike";
 power2 = "Lightning Dash";
