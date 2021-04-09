@@ -5,6 +5,8 @@ lastState = state;
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
+hSpeed = 0;
+vSpeed = 0;
 speedWalk = 1;
 speedHorse = 1.3;
 speedRoll = 1.8;
@@ -20,3 +22,9 @@ spriteRunH = sQuijoteEnCaballo;
 spriteIdleH = sQuijoteEnCaballoQuieto;
 spriteRoll = sRodar;
 localFrame = 0;
+
+if (global.targetX != -1){
+	x = global.targetX;
+	y = global.targetY;
+	direction = global.targetDir;
+}

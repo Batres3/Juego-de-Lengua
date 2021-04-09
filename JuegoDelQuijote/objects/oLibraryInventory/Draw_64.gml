@@ -8,6 +8,7 @@ draw_sprite(sLibraryInventory, 0, cameraX + 20, cameraMiddleY);
 
 //Items
 for (var i = 0; i < ds_grid_width(global.AllItems); i++){
+	if (global.AllItems[# i, Book.Name] != -1){
 	var columnNow = floor(i/menuWidth);
 	var itemX = cameraX + 28 + (i * itemSeperationX);
 	var itemY = bottomRow - ((menuHeight-1) * itemSeperationY);
@@ -52,9 +53,11 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 	if (point_in_rectangle(mouse_x,mouse_y, cameraX + 220, cameraY + 150, cameraX + 228, cameraY + 158) and mouse_check_button_pressed(mb_left)){
 		layer_sequence_headdir(sequence, seqdir_left);
 		layer_sequence_play(sequence);
+		global.AllItems[# i, Book.Name] = -1;
 		instance_destroy(currentItem);
 		showDescription = false;
 		exit_ = true;
+		return;
 		//Execute Destroy script
 	}
 	
@@ -65,5 +68,5 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 		instance_destroy(currentItem);
 		showDescription = false;
 	}
-	
+	}
 }
