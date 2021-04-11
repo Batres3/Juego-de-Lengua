@@ -7,9 +7,9 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 3,
-  "bbox_right": 28,
-  "bbox_top": 4,
+  "bbox_left": 0,
+  "bbox_right": 31,
+  "bbox_top": 0,
   "bbox_bottom": 29,
   "HTile": false,
   "VTile": false,
@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 17,
+  "gridY": 16,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"fd55bebf-5362-4327-8135-8849b4d2f169","path":"sprites/sPlayerAttackSlash/sPlayerAttackSlash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"fd55bebf-5362-4327-8135-8849b4d2f169","path":"sprites/sPlayerAttackSlash/sPlayerAttackSlash.yy",},"LayerId":{"name":"2d483eab-23a6-4652-9b8c-e25b1cb5ece2","path":"sprites/sPlayerAttackSlash/sPlayerAttackSlash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
