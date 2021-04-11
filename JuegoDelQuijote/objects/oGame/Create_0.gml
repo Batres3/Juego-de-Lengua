@@ -11,6 +11,7 @@ global.targetDir = 0;
 global.iLifted = noone;
 global.lastState = undefined;
 global.currentItem = noone;
+global.booksBurnt = 0;
 
 global.iCamera = instance_create_layer(0,0, layer, oCamera);
 

@@ -8,24 +8,23 @@
 	sequenceDone = true;
 }
  
- if(exit_ and sequenceDone) {
-	 if (oJugador.state == PlayerStateAct){
-		 instance_destroy();
-	 } else {
-	 with (oJugador){
- 	 state = global.lastState;
-	 }
+ if (burn and sequenceDone){
+	 PlayerActOutAnimation(sPlayerBurn, BurnBook);
+	 global.currentItem.lifted = true;
 	 instance_destroy();
-	 }
-}
+ }
  
- if (keyboard_check_pressed(vk_space) and sequenceDone){
-	  if (oJugador.state == PlayerStateAct){
-		 instance_destroy();
-	 } else {
+ if(exit_ and sequenceDone) {
 	 with (oJugador){
  	 state = global.lastState;
 	 }
 	 instance_destroy();
+}
+
+ 
+ if (keyboard_check_pressed(vk_space) and sequenceDone and !burn){
+	 with (oJugador){
+ 	 state = global.lastState;
 	 }
+	 instance_destroy();
 }

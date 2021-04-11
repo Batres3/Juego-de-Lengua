@@ -232,11 +232,13 @@ function ScriptExecuteArray(scr,args){
 ///@arg Sprite
 ///@arg EndScript
 function PlayerActOutAnimation(sprite, EndScript){
-	if (oJugador.state = PlayerStateLocked){
-	} else global.lastState = oJugador.state;
-	oJugador.state = PlayerStateAct;
+	with (oJugador){
+	if (state = PlayerStateLocked){
+	} else global.lastState = state;
+	state = PlayerStateAct;
 	sprite_index = sprite;
-	if (argument_count > 1) oJugador.animationEndScript = EndScript;
+	if (argument_count > 1) animationEndScript = EndScript;
 	localFrame = 0;
 	image_index = 0;
+	}
 }

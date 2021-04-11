@@ -160,8 +160,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "JuegoDelQuijote",
-    "path": "JuegoDelQuijote.yyp",
+    "name": "Player",
+    "path": "folders/Sprites/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sSanchoPanza",

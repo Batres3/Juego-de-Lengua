@@ -35,6 +35,7 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 		//Show item details
 		if (!instance_exists(global.AllItems[# i, Book.Object])) {
 		currentItem = instance_create_layer(-32, -32, "InventoryDesc", global.AllItems[# i, Book.Object]);
+		
 		global.currentItem = currentItem;
 		itemName = i;
 		
@@ -53,14 +54,14 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 	}
 	
 	//Destroy Book
-	if (point_in_rectangle(mouse_x,mouse_y, cameraX + 220, cameraY + 150, cameraX + 228, cameraY + 158) and mouse_check_button_pressed(mb_left)){
+	if (point_in_rectangle(mouse_x,mouse_y, cameraX + 220, cameraY + 150, cameraX + 228, cameraY + 158) and mouse_check_button_pressed(mb_left) and global.booksBurnt < 10){
 		layer_sequence_headdir(sequence, seqdir_left);
 		layer_sequence_play(sequence);
 		global.AllItems[# itemName, Book.Name] = -1;
 		currentItem.burning = true;
-		PlayerActOutAnimation(sPlayerBurn, BurnBook);
 		showDescription = false;
-		exit_ = true;
+		global.booksBurnt++;
+		burn = true;
 		return;
 		//Execute Destroy script
 	}

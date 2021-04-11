@@ -6,6 +6,9 @@ manaCost = undefined;
 power1 = undefined;
 power2 = undefined;
 burning = false;
+lifted = false;
+image_xscale = 0.2
+image_yscale = 0.2;
 
 isShowingInfo = false;
 

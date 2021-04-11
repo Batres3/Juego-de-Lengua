@@ -1,4 +1,4 @@
-///@desc Essential Entity Setup
+ ///@desc Essential Entity Setup
 z = 0;
 flash = 0;
 lifted = 0;

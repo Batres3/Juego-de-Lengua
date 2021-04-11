@@ -6,6 +6,7 @@ itemScale = 0.5;
 currentItem = noone;
 showDescription = false;
 sequenceDone = true;
+burn = false;
 depth = 6;
 exit_ = false;
 

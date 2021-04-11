@@ -4,7 +4,7 @@ function PlayerStateAct(){
 	//Update Sprite
 	PlayerAnimateScript();
 	if(animationEnd){
-		oJugador.state = global.lastState;
+		oJugador.state = PlayerStateNoHorse;
 		animationEnd = false;
 		if (animationEndScript != -1){
 			script_execute(animationEndScript);
