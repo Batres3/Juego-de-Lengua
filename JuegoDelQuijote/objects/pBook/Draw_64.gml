@@ -3,7 +3,7 @@
 
 
 //Info for displaying description
-if(isShowingInfo){
+if(isShowingInfo and !burning){
 	draw_set_font(fText);
 	draw_set_color(c_black);
 	draw_text_ext(camera_get_view_x(view_camera[0]) + 175, camera_get_view_y(view_camera[0]) + 15, name, 10, 80);

@@ -35,7 +35,9 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 		//Show item details
 		if (!instance_exists(global.AllItems[# i, Book.Object])) {
 		currentItem = instance_create_layer(-32, -32, "InventoryDesc", global.AllItems[# i, Book.Object]);
-		currentItem.name = global.AllItems[# i, Book.Name];
+		global.currentItem = currentItem;
+		itemName = i;
+		
 	}
 	}
 	}
@@ -43,6 +45,7 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 	if (point_in_rectangle(mouse_x,mouse_y, cameraX + 200, cameraY + 150, cameraX + 208, cameraY + 158) and mouse_check_button_pressed(mb_left)){
 		layer_sequence_headdir(sequence, seqdir_left);
 		layer_sequence_play(sequence);
+		global.currentItem = noone;
 		instance_destroy(currentItem);
 		showDescription = false;
 		exit_ = true;
@@ -53,8 +56,9 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 	if (point_in_rectangle(mouse_x,mouse_y, cameraX + 220, cameraY + 150, cameraX + 228, cameraY + 158) and mouse_check_button_pressed(mb_left)){
 		layer_sequence_headdir(sequence, seqdir_left);
 		layer_sequence_play(sequence);
-		global.AllItems[# i, Book.Name] = -1;
-		instance_destroy(currentItem);
+		global.AllItems[# itemName, Book.Name] = -1;
+		currentItem.burning = true;
+		PlayerActOutAnimation(sPlayerBurn, BurnBook);
 		showDescription = false;
 		exit_ = true;
 		return;
@@ -65,6 +69,7 @@ for (var i = 0; i < ds_grid_width(global.AllItems); i++){
 	if (point_in_rectangle(mouse_x, mouse_y, cameraX + 240, cameraY + 10, cameraX + 260, cameraY + 30) and mouse_check_button_pressed(mb_left)){
 		layer_sequence_headdir(sequence, seqdir_left);
 		layer_sequence_play(sequence);
+		global.currentItem = noone;
 		instance_destroy(currentItem);
 		showDescription = false;
 	}

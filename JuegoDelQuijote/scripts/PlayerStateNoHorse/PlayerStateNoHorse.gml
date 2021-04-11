@@ -39,6 +39,7 @@ if(keyboard_check_pressed(vk_space)) {
 		state = PlayerStateRoll;
 	    moveDistRemaining = distanceRoll;
 	} else {
+		global.lastState = state;
 		ScriptExecuteArray(activate.entityActivateScript, activate.entityActivateArgs);
 		
 		if(activate.entityNPC){

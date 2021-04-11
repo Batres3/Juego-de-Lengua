@@ -5,6 +5,7 @@ magic = undefined;
 manaCost = undefined;
 power1 = undefined;
 power2 = undefined;
+burning = false;
 
 isShowingInfo = false;
 

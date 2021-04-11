@@ -1,7 +1,7 @@
 state = PlayerStateNoHorse;
 stateAttack = AttackSlash;
 hitByAttack = -1;
-lastState = state;
+
 
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
@@ -15,6 +15,8 @@ distanceBonk = 24;
 distanceBonkHeight = 12;
 speedBonk = 1.5;
 z = 0;
+
+animationEndScript = -1;
 
 spriteRun = sQuijoteSinCaballoCorriendo;
 spriteIdle = sQuijoteSinCaballo;

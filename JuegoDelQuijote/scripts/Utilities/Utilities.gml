@@ -216,7 +216,7 @@ function ScriptExecuteArray(scr,args){
 ///@desc RoomTransition(type, targetRoom)
 ///@arg Type
 ///@arg TargetRoom
-function RoomTransition(type_, targetRoom){
+ function RoomTransition(type_, targetRoom){
 	if (!instance_exists(oTransition)){
 		with (instance_create_depth(0, 0, -9999, oTransition)){
 			type = type_;
@@ -224,4 +224,19 @@ function RoomTransition(type_, targetRoom){
 			
 		}
 	} else show_debug_message("Trying to transition while transitioning!");
+}
+
+
+
+///@desc PlayerActOutAnimation(Sprite, EndScript)
+///@arg Sprite
+///@arg EndScript
+function PlayerActOutAnimation(sprite, EndScript){
+	if (oJugador.state = PlayerStateLocked){
+	} else global.lastState = oJugador.state;
+	oJugador.state = PlayerStateAct;
+	sprite_index = sprite;
+	if (argument_count > 1) oJugador.animationEndScript = EndScript;
+	localFrame = 0;
+	image_index = 0;
 }

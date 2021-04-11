@@ -9,15 +9,33 @@
 }
  
  if(exit_ and sequenceDone) {
+	if (global.currentItem != noone and !global.currentItem.burning){
 	with (oJugador){
-	state = lastState;
+	state = global.lastState;
 	}
 	instance_destroy();
+	} else if (global.currentItem != noone and global.currentItem.burning){
+		instance_destroy();
+	} else{
+	with (oJugador){
+	state = global.lastState;
+	}
+	instance_destroy();
+	}
 }
  
  if (keyboard_check_pressed(vk_space) and sequenceDone){
+	if(global.currentItem != noone and !global.currentItem.burning){
 	with (oJugador){
-	state = lastState;
+	state = global.lastState;
 	}
 	instance_destroy();
+	} else if (global.currentItem != noone and global.currentItem.burning){
+		instance_destroy();
+	} else{
+	with (oJugador){
+	state = global.lastState;
+	}
+	instance_destroy();
+	}
 }

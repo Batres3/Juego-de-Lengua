@@ -5,7 +5,7 @@
 event_inherited();
 
 name = "The Feynman Lectures on Physics";
-description = "Una recolección de las clases que dio Richard Feynman en CALTECH.\nParecen tener algún poder eléctrico.";
+description = "Una recoleccion de las clases que dio Richard Feynman en CALTECH.\nParecen tener algun poder electrico.";
 magic = Power.Lightning;
 manaCost = 20;
 power1 = "Lightning Strike";

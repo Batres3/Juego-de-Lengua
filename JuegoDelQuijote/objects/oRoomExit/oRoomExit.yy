@@ -30,8 +30,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Text",
-    "path": "folders/Objetos/Text.yy",
+    "name": "Managers",
+    "path": "folders/Objetos/Managers.yy",
   },
   "resourceVersion": "1.0",
   "name": "oRoomExit",

@@ -4,7 +4,10 @@ if (instance_exists(oJugador)) and (position_meeting(oJugador.x, oJugador.y, id)
 		global.targetX = targetX;
 		global.targetY = targetY;
 		global.targetDir = oJugador.direction;
-		with (oJugador) state = PlayerStateTransition;
+		with (oJugador){ 
+			global.lastState = state;
+			state = PlayerStateTransition;
+			}
 		RoomTransition(TRANS_TYPE.SLIDE, targetRoom);
 		instance_destroy();
 	}
