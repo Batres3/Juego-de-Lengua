@@ -16,7 +16,7 @@ if (responses[0] != -1 and (textProgress >= string_length(message))){
 	}
 }
 
-draw_text((x1 + x2)/2, y1 + 8, _print);
+draw_text_ext((x1 + x2)/2, y1 + 8, _print, font_get_size(fText), RESOLUTION_W - 10);
 draw_set_color(c_white);
-draw_text((x1 + x2)/2, y1 + 7, _print);
+draw_text_ext((x1 + x2)/2, y1 + 7, _print, font_get_size(fText), RESOLUTION_W - 10);
 

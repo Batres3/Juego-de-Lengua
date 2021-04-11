@@ -17,6 +17,7 @@
     {"id":{"name":"oFragPlant","path":"objects/oFragPlant/oFragPlant.yy",},"order":5,},
     {"id":{"name":"PlayerStateHorse","path":"scripts/PlayerStateHorse/PlayerStateHorse.yy",},"order":0,},
     {"id":{"name":"oHiloRojo","path":"objects/oHiloRojo/oHiloRojo.yy",},"order":10,},
+    {"id":{"name":"oSancho","path":"objects/oSancho/oSancho.yy",},"order":7,},
     {"id":{"name":"oLibrary","path":"objects/oLibrary/oLibrary.yy",},"order":5,},
     {"id":{"name":"oPlant","path":"objects/oPlant/oPlant.yy",},"order":3,},
     {"id":{"name":"sInteriorExtra","path":"sprites/sInteriorExtra/sInteriorExtra.yy",},"order":4,},

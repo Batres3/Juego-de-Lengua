@@ -9,3 +9,6 @@
 #macro TRANSITION_SPEED 0.02
 #macro OUT 0
 #macro IN 1
+
+#macro LibrosQuemar "Flyte, Harry Potter, Diario de una ilusion, Hilo Rojo"
+#macro LibrosSalvar "The Feynman lecturen on Physics, Genio en 21 dias, Brian Weiss, Cartas de amor al cielo"

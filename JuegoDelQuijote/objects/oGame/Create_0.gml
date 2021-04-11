@@ -15,7 +15,6 @@ global.booksBurnt = 0;
 
 global.iCamera = instance_create_layer(0,0, layer, oCamera);
 
-
 //All item properties
 global.AllItems = ds_grid_create(0, Book.Height);
 
