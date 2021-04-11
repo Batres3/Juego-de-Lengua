@@ -48,6 +48,7 @@
     {"id":{"name":"sPot","path":"sprites/sPot/sPot.yy",},"order":2,},
     {"id":{"name":"tInteriorExtra","path":"tilesets/tInteriorExtra/tInteriorExtra.yy",},"order":3,},
     {"id":{"name":"oBrianWiess","path":"objects/oBrianWiess/oBrianWiess.yy",},"order":3,},
+    {"id":{"name":"sSanchoPanza","path":"sprites/sSanchoPanza/sSanchoPanza.yy",},"order":14,},
     {"id":{"name":"oSignpost","path":"objects/oSignpost/oSignpost.yy",},"order":2,},
     {"id":{"name":"sFragPlant","path":"sprites/sFragPlant/sFragPlant.yy",},"order":9,},
     {"id":{"name":"PlayerStateNoHorse","path":"scripts/PlayerStateNoHorse/PlayerStateNoHorse.yy",},"order":1,},
