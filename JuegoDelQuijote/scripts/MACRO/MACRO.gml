@@ -12,3 +12,35 @@
 
 #macro LibrosQuemar "Flyte, Harry Potter, Diario de una ilusion, Hilo Rojo"
 #macro LibrosSalvar "The Feynman lecturen on Physics, Genio en 21 dias, Brian Weiss, Cartas de amor al cielo"
+
+enum ENEMYSTATE {
+	IDLE,
+	WANDER,
+	CHASE,
+	ATTACK,
+	HURT,
+	DIE,
+	WAIT
+}
+
+enum Power{
+	Lightning,
+	Wind,
+	Water,
+	Fire,
+	Earth,
+	Height
+}
+
+enum Book{
+	Name,
+	Sprite,
+	Power,
+	Object,
+	Height
+}
+
+enum Type{
+	Save,
+	Destroy
+}
