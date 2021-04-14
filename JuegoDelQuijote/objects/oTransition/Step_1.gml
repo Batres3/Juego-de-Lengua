@@ -1,4 +1,4 @@
-///@desc
+ ///@desc
 
 with(oJugador){
 	state = PlayerStateTransition;

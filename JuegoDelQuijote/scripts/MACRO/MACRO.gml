@@ -20,7 +20,8 @@ enum ENEMYSTATE {
 	ATTACK,
 	HURT,
 	DIE,
-	WAIT
+	WAIT,
+	ACT
 }
 
 enum Power{
