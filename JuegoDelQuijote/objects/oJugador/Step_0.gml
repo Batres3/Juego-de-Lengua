@@ -13,4 +13,4 @@ if (keyboard_check_pressed(ord("H")) and state == PlayerStateHorse) {
 
 if (!global.gamePaused) script_execute(state);
 
-depth = 10;
+depth = -bbox_bottom;

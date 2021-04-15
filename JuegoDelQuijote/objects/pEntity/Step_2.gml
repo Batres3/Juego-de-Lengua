@@ -1,6 +1,6 @@
 /// @desc Entity Loop
 if (!global.gamePaused){
-	depth = 20;
+	depth = -bbox_bottom;
 	if (lifted) and (instance_exists(oJugador)){
 		x = oJugador.x + 1;
 		y = oJugador.y;

@@ -7,7 +7,7 @@ currentItem = noone;
 showDescription = false;
 sequenceDone = true;
 burn = false;
-depth = 6;
+depth = -9990;
 exit_ = false;
 
 cameraX = camera_get_view_x(view_camera[0]);

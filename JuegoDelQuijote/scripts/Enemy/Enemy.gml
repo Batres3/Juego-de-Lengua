@@ -46,12 +46,13 @@ function SlimeWander() {
 
 function SlimeChase() {
 	sprite_index = sprMove;
+	if (enemyHasDirection) EnemyAnimateScript();
 	if (instance_exists(target)){
 		xTo = target.x;
 		yTo = target.y;
 		
 		var _distanceToGo = point_distance(x, y, xTo, yTo);
-		image_speed = 1;
+		if (!enemyHasDirection)image_speed = 1;
 		dir = point_direction(x, y, xTo, yTo);
 		if (_distanceToGo > enemySpeed){
 			hSpeed = lengthdir_x(enemySpeed, dir);
@@ -60,9 +61,22 @@ function SlimeChase() {
 			hSpeed = lengthdir_x(_distanceToGo, dir);
 			vSpeed = lengthdir_y(_distanceToGo, dir);
 		}
-		if (hSpeed != 0) image_xscale = sign(hSpeed);
+		if (hSpeed != 0 and !enemyHasDirection) image_xscale = sign(hSpeed);
 		//Collide and move
 		EnemyTileCollision();
+	}
+	
+	//Check to perform an attack
+	if (instance_exists(target)) and (point_distance(x, y, target.x, target.y) <= enemyAttackRadius){
+		state = ENEMYSTATE.ATTACK;
+		if (enemyIsSlime){
+		sprite_index = sprAttack;
+		image_index = 0;
+		image_speed = 1.0;
+		//target 8px past player
+		xTo += lengthdir_x(8, dir);
+		yTo += lengthdir_y(8, dir);
+		}
 	}
 }
 
@@ -71,9 +85,9 @@ function WindmillWander() {
 	//Check for aggro
 	if (++aggroCheck >= aggroCheckDuration){
 		aggroCheck = 0;
-		if (instance_exists(oJugador) and point_distance(x, y, oJugador.x, oJugador.y) <= enemyAggroRadius){
-			target = oJugador;
-			EnemyActOutAnimation(object_index, sSmokeExplosion, SetToChase)
+		if (instance_exists(target) and point_distance(x, y, target.x, target.y) <= enemyAggroRadius){
+			entityCollision = false;
+			EnemyActOutAnimation(object_index, sSmokeExplosion, SetToChase);
 		}
 	}
 }
@@ -102,7 +116,7 @@ function EnemyTileCollision() {
 function EnemyStateAct() {
 	EnemyAnimateScript();
 	if(animationEnd){
-		state = ENEMYSTATE.WANDER;
+		if (!giantAttack) state = ENEMYSTATE.WANDER;
 		animationEnd = false;
 		if (animationEndScript != -1){
 			script_execute(animationEndScript);
@@ -125,7 +139,7 @@ function EnemyAnimateScript() {
 	image_index = localFrame + (round(dir/90) * _totalFrames);
 	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
 
-	if (localFrame = _totalFrames){
+	if (localFrame >= _totalFrames){
   		animationEnd = true;
   		localFrame -= _totalFrames;
 
@@ -134,4 +148,63 @@ function EnemyAnimateScript() {
 
 function SetToChase() {
 	state = ENEMYSTATE.CHASE;
+}
+
+function EnemyWait() {
+	if (++stateWait >= stateWaitDuration){
+		stateWait = 0;
+		state = stateTarget;
+	}
+}
+
+function SlimeAttack() {
+	//How fast to move
+	var _spd = enemySpeed;
+	
+	//Dont move while getting ready to jump
+	if (image_index < 2) _spd = 0;
+	
+	//Freeze animation while midair and after landing
+	if (floor(image_index) == 3 or floor(image_index == 5)){
+		image_speed = 0;
+	}
+	
+	//How far we have to go
+	var _distanceToGo = point_distance(x, y, xTo, yTo);
+	
+	//begin landing once we're nearly done
+	if (_distanceToGo < 4 and image_index < 5) image_speed = 1;
+	
+	//Move
+	if (_distanceToGo > _spd) {
+		dir = point_direction(x, y, xTo, yTo);
+		hSpeed = lengthdir_x(_spd,dir);
+		vSpeed = lengthdir_y(_spd,dir);
+		if(hSpeed != 0) image_xscale = sign(hSpeed);
+		
+		if(EnemyTileCollision() == true) {
+			xTo = x; 
+			yTo = y;
+			} 
+	} else {
+		x = xTo; 
+		y = yTo;
+		if (floor(image_index) == 5){
+			stateTarget = ENEMYSTATE.CHASE;
+			stateWaitDuration = 15;
+			state = ENEMYSTATE.WAIT;
+		}
+	}
+}
+
+function GiantAttack (){
+	giantAttack = true;
+	EnemyActOutAnimation(object_index, sprAttack, ScreenShakeGiant);
+}
+
+function ScreenShakeGiant() {
+	ScreenShake(4, 16);
+	stateTarget = ENEMYSTATE.CHASE;
+	stateWaitDuration = 15;
+	state = ENEMYSTATE.WAIT;
 }
