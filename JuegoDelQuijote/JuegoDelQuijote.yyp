@@ -11,6 +11,7 @@
     {"id":{"name":"sLibraryInventory","path":"sprites/sLibraryInventory/sLibraryInventory.yy",},"order":6,},
     {"id":{"name":"Enemy","path":"scripts/Enemy/Enemy.yy",},"order":7,},
     {"id":{"name":"sSlimeAttack","path":"sprites/sSlimeAttack/sSlimeAttack.yy",},"order":2,},
+    {"id":{"name":"oIconButton","path":"objects/oIconButton/oIconButton.yy",},"order":8,},
     {"id":{"name":"tTerreno","path":"tilesets/tTerreno/tTerreno.yy",},"order":1,},
     {"id":{"name":"sPlant","path":"sprites/sPlant/sPlant.yy",},"order":5,},
     {"id":{"name":"sBrianWeiss","path":"sprites/sBrianWeiss/sBrianWeiss.yy",},"order":4,},
@@ -19,6 +20,7 @@
     {"id":{"name":"oFragPlant","path":"objects/oFragPlant/oFragPlant.yy",},"order":5,},
     {"id":{"name":"PlayerStateHorse","path":"scripts/PlayerStateHorse/PlayerStateHorse.yy",},"order":0,},
     {"id":{"name":"oHiloRojo","path":"objects/oHiloRojo/oHiloRojo.yy",},"order":10,},
+    {"id":{"name":"sIconButton","path":"sprites/sIconButton/sIconButton.yy",},"order":0,},
     {"id":{"name":"oSancho","path":"objects/oSancho/oSancho.yy",},"order":7,},
     {"id":{"name":"oLibrary","path":"objects/oLibrary/oLibrary.yy",},"order":5,},
     {"id":{"name":"oPlant","path":"objects/oPlant/oPlant.yy",},"order":3,},
@@ -149,6 +151,7 @@
     {"folderPath":"folders/Sprites/Books.yy","order":9,"resourceVersion":"1.0","name":"Books","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objetos/Enemy.yy","order":7,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Enemies.yy","order":14,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Icons.yy","order":16,"resourceVersion":"1.0","name":"Icons","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

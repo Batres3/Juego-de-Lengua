@@ -46,6 +46,7 @@ function SlimeWander() {
 
 function SlimeChase() {
 	sprite_index = sprMove;
+	stompCooldown--;
 	if (enemyHasDirection) EnemyAnimateScript();
 	if (instance_exists(target)){
 		xTo = target.x;
@@ -198,12 +199,15 @@ function SlimeAttack() {
 }
 
 function GiantAttack (){
-	giantAttack = true;
-	EnemyActOutAnimation(object_index, sprAttack, ScreenShakeGiant);
+	if(stompCooldown < 1){
+		stompCooldown = 120;
+		giantAttack = true;
+		EnemyActOutAnimation(object_index, sprAttack, ScreenShakeGiant);
+	} else state = ENEMYSTATE.CHASE;
 }
 
 function ScreenShakeGiant() {
-	ScreenShake(4, 16);
+	ScreenShake(6, 32);
 	stateTarget = ENEMYSTATE.CHASE;
 	stateWaitDuration = 15;
 	state = ENEMYSTATE.WAIT;

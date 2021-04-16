@@ -29,5 +29,3 @@ AddItemToMasterList(["Hilo Rojo", sHiloRojo, Power.Fire, oHiloRojo]);
 
 
 display_set_gui_size(RESOLUTION_W,RESOLUTION_H);
-
-room_goto(ROOM_START);

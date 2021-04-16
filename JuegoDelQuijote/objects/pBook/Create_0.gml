@@ -9,6 +9,7 @@ burning = false;
 lifted = false;
 image_xscale = 0.2
 image_yscale = 0.2;
+depth = -9992;
 
 isShowingInfo = false;
 
