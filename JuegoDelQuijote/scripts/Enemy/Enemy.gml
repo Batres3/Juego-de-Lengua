@@ -46,6 +46,7 @@ function SlimeWander() {
 
 function SlimeChase() {
 	sprite_index = sprMove;
+	entityCollision = false;
 	stompCooldown--;
 	if (enemyHasDirection) EnemyAnimateScript();
 	if (instance_exists(target)){
@@ -86,9 +87,10 @@ function WindmillWander() {
 	//Check for aggro
 	if (++aggroCheck >= aggroCheckDuration){
 		aggroCheck = 0;
-		if (instance_exists(target) and point_distance(x, y, target.x, target.y) <= enemyAggroRadius){
+		if (instance_exists(target) and point_distance(x, y, target.x, target.y) <= enemyAggroRadius and !giantExists){
+			giantExists = true;
 			entityCollision = false;
-			EnemyActOutAnimation(object_index, sSmokeExplosion, SetToChase);
+			EnemyActOutAnimation(id, sSmokeExplosion, SetToChase);
 		}
 	}
 }

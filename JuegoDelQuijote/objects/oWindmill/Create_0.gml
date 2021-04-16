@@ -4,6 +4,7 @@ state = ENEMYSTATE.WANDER;
 target = oJugador;
 localFrame = 0;
 giantAttack = false;
+giantExists = false;
 
 //Enemy sprites
 sprMove = sGiant;
