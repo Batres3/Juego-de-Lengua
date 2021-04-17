@@ -1,12 +1,12 @@
 ///@arg Message
 ///@arg Background
 ///@arg [Responses]
-function NewTextBox(){
+function NewTextBox(message_){
 	var _obj;
 	if(instance_exists(oText)) _obj = oTextQueued; else _obj = oText;
 	
 	with (instance_create_layer(0, 0, "Instances", _obj)){
-		message = argument[0];
+		message = message_;
 		if (instance_exists(other)) originInstance = other.id; else originInstance = noone;
 		if (argument_count > 1) background = argument[1]; else background = 1;
 		if (argument_count > 2){
@@ -44,6 +44,10 @@ function DialogueResponses(response) {
 		case 1: NewTextBox("You gave response A!", 1); break;
 		case 2: NewTextBox("You gave response B! Any furhter response?", 1, ["3:Yes!", "0:No."]); break;
 		case 3: NewTextBox("Thanks for your responses!", 1); break;
+		case 4: NewTextBox("Esta es la biblioteca donde el babrbero y el cura quemaron los libros de mi senor Don Quijote", 1, ["0:Que bien.", "5:Que libros quemaron?"]); break;
+		case 5: NewTextBox("Me conto mi amo que esos villanos, hartos de comer ajos y cebollas, quemaron y salvaron los siguientes libros:", 1, ["6:Ensenar libros quemados", "7:Ensenar libros salvados"]); break;
+		case 6: NewTextBox(LibrosQuemar, 1); break;
+		case 7: NewTextBox(LibrosSalvar, 1); break;
 		default: break;
 	}
 }
@@ -56,7 +60,7 @@ function DialogueResponses(response) {
  function PlayerAnimateScript(){
   var _totalFrames = sprite_get_number(sprite_index)/4;
 
-  image_index = localFrame + (CARDINAL_DIR * _totalFrames) 
+  image_index = localFrame + (CARDINAL_DIR * _totalFrames);
   localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
 
   if (localFrame = _totalFrames){
@@ -211,4 +215,34 @@ function ScriptExecuteArray(scr,args){
 		
 	}
 
+}
+
+///@desc RoomTransition(type, targetRoom)
+///@arg Type
+///@arg TargetRoom
+ function RoomTransition(type_, targetRoom){
+	if (!instance_exists(oTransition)){
+		with (instance_create_depth(0, 0, -9999, oTransition)){
+			type = type_;
+			target = targetRoom;
+			
+		}
+	} else show_debug_message("Trying to transition while transitioning!");
+}
+
+
+
+///@desc PlayerActOutAnimation(Sprite, EndScript)
+///@arg Sprite
+///@arg EndScript
+function PlayerActOutAnimation(sprite, EndScript){
+	with (oJugador){
+	if (state = PlayerStateLocked){
+	} else global.lastState = state;
+	state = PlayerStateAct;
+	sprite_index = sprite;
+	if (argument_count > 1) animationEndScript = EndScript;
+	localFrame = 0;
+	image_index = 0;
+	}
 }
