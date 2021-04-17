@@ -25,7 +25,7 @@ function NewTextBox(message_){
 	} 
 	
 	with (oJugador) {
-		if (state != PlayerStateLocked){
+		if (state != PlayerStateLocked and state != PlayerStateDead){
 			lastState = state;
 			state = PlayerStateLocked;
 		}
@@ -244,5 +244,27 @@ function PlayerActOutAnimation(sprite, EndScript){
 	if (argument_count > 1) animationEndScript = EndScript;
 	localFrame = 0;
 	image_index = 0;
+	}
+}
+
+function HurtPlayer(_direction, _force, _damage){
+	if (oJugador.invulnerable <= 0){
+		global.playerHealth = max(0, global.playerHealth - _damage);
+		if (global.playerHealth > 0){
+			with (oJugador){
+				state = PlayerStateBonk;
+				direction = _direction - 180;
+				moveDistRemaining = _force;
+				ScreenShake(2, 10);
+				flash = 0.7;
+				invulnerable = 60;
+				flashShader = shRedFlash;
+			}
+		}else {
+			with (oJugador){
+				state = PlayerStateDead;
+			}
+			
+		}
 	}
 }

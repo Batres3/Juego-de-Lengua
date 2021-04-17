@@ -22,14 +22,15 @@ if (keyboard_check_pressed(vk_space)){
 			with(originInstance) DialogueResponses(other.responseScripts[other.responseSelected]);
 		}
 		
-		instance_destroy();
+		
 		if(instance_exists(oTextQueued)){
 			with(oTextQueued) ticket--;
 		} else {
 			with (oJugador){
-				state = lastState;
+				if (state == PlayerStateDead) dead = true; else state = lastState;
 			}
 		}
+		instance_destroy();
 	} else if(textProgress > 2){
 		textProgress = _messageLength;
 	}

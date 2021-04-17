@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Extras",
+    "path": "folders/Sprites/Extras.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlant",

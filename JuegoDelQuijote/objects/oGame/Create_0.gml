@@ -1,8 +1,15 @@
 // Initialise & Globals
 randomize();
 global.AllItems = ds_grid_create(0, Book.Height);
+frases = ["En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor",
+"¡Oh, memoria, enemiga mortal de mi descanso!",
+"Confía en el tiempo, que suele dar dulces salidas a muchas amargas dificultades",
+"mas vale una palabra a tiempo que cien a destiempo.",
+"el buen entendedor pocas necesita.",
+"donde una puerta se cierra otra se abre."]
 
 global.gamePaused = false;
+global.showHealth = false;
 global.textSpeed = 0.75;
 global.targetRoom = -1;
 global.targetX = -1;
@@ -12,8 +19,11 @@ global.iLifted = noone;
 global.lastState = undefined;
 global.currentItem = noone;
 global.booksBurnt = 0;
+global.playerHealthMax = 3;
+global.playerHealth = global.playerHealthMax;
 
 global.iCamera = instance_create_layer(0,0, layer, oCamera);
+global.iUI = instance_create_layer(0,0, layer, oUI);
 
 //All item properties
 global.AllItems = ds_grid_create(0, Book.Height);

@@ -17,6 +17,7 @@ timePassed = 0;
 waitDuration = 60;
 wait = 0;
 stompCooldown = 0;
+hit = false;
 
 //Enemy sprites
 sprMove = sSlime;

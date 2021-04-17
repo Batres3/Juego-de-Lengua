@@ -1,9 +1,9 @@
  ///@desc
 
 with(oJugador){
-	state = PlayerStateTransition;
+	if (state != PlayerStateDead) state = PlayerStateTransition;
 }	
-
+if (percent > 0.2) global.showHealth = true;
 if (leading == OUT){
 	percent = min(1, percent + TRANSITION_SPEED);
 	if (percent >= 1){
@@ -16,6 +16,7 @@ if (leading == OUT){
 		with (oJugador) {
 			if (state != PlayerStateNoHorse and state != PlayerStateHorse) state = PlayerStateNoHorse;
 			else state = global.lastState;
+			draw_set_alpha(1);
 		}
 		instance_destroy();
 	}

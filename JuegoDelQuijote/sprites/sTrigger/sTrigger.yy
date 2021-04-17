@@ -26,7 +26,6 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"1cbd942a-14dc-4207-a407-ac0edc910e7a","path":"sprites/sTrigger/sTrigger.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"1cbd942a-14dc-4207-a407-ac0edc910e7a","path":"sprites/sTrigger/sTrigger.yy",},"LayerId":{"name":"54de46a8-063e-42cb-af4f-59f81b086ebf","path":"sprites/sTrigger/sTrigger.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"1cbd942a-14dc-4207-a407-ac0edc910e7a","path":"sprites/sTrigger/sTrigger.yy",},"LayerId":{"name":"f4b39544-c9d5-4f51-8ecd-c08607e347bd","path":"sprites/sTrigger/sTrigger.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},"resourceVersion":"1.0","name":"1cbd942a-14dc-4207-a407-ac0edc910e7a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -70,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Extras",
+    "path": "folders/Sprites/Extras.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTrigger",

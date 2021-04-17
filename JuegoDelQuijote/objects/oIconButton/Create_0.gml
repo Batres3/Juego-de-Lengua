@@ -1,1 +1,2 @@
 Text = "Iniciar";
+pressed = false;

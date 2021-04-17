@@ -11,6 +11,10 @@ if (keyboard_check_pressed(ord("H")) and state == PlayerStateHorse) {
 	state = PlayerStateNoHorse;
 } else if (keyboard_check_pressed(ord("H"))) state = PlayerStateHorse;
 
-if (!global.gamePaused) script_execute(state);
+if (!global.gamePaused) {
+	script_execute(state);
+	invulnerable = max(invulnerable - 1, 0);
+	flash = max(flash - 0.05, 0);
+}
 
 depth = -bbox_bottom;

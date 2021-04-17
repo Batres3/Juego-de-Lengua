@@ -24,4 +24,17 @@ function ScreenShakeGiant() {
 	stateTarget = ENEMYSTATE.CHASE;
 	stateWaitDuration = 15;
 	state = ENEMYSTATE.WAIT;
+	if (hit) HurtPlayer(point_direction(x, y, oJugador.x, oJugador.y), enemyForceTouch, enemyDamage);
+}
+
+function GiantDie() {
+	EnemyActOutAnimation(id, sSmokeExplosion, SetToOriginal);
+}
+
+function SetToOriginal() {
+	x = xOriginal;
+	y = yOriginal;
+	entityCollision = true;
+	enemyScript[ENEMYSTATE.DIE] = -1;
+	state = ENEMYSTATE.WANDER;
 }

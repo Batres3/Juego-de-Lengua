@@ -5,6 +5,8 @@ target = oJugador;
 localFrame = 0;
 giantAttack = false;
 giantExists = false;
+xOriginal = x;
+yOriginal = y;
 
 //Enemy sprites
 sprMove = sGiant;
@@ -18,4 +20,4 @@ enemyScript[ENEMYSTATE.CHASE] = SlimeChase;
 enemyScript[ENEMYSTATE.ACT] = EnemyStateAct;
 enemyScript[ENEMYSTATE.ATTACK] = GiantAttack;
 enemyScript[ENEMYSTATE.HURT] = SlimeHurt;
-enemyScript[ENEMYSTATE.DIE] = SlimeDie;
+enemyScript[ENEMYSTATE.DIE] = GiantDie;
