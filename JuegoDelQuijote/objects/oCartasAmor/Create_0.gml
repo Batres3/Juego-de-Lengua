@@ -5,7 +5,7 @@
 event_inherited();
 
 name = "Cartas de amor al cielo";
-description = "Libro de adriana, ni puta idea.\nParece tener algun poder de agua";
+description = "Una novela juvenil contada a traves de una serie de cartas escritas a personajes muertos.\nParece tener algun poder de agua";
 magic = Power.Water;
 manaCost = 20;
 power1 = "Lightning Strike";

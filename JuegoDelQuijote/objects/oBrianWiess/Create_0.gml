@@ -5,7 +5,7 @@
 event_inherited();
 
 name = "Brian Weiss";
-description = "No se que es.";
+description = "El doctor Weiss revela como el contacto con nuestras vidas futuras puede transformar nuestra vida presente.\n Parece tener algun poder de tierra";
 magic = Power.Earth;
 manaCost = 20;
 power1 = "Lightning Strike";

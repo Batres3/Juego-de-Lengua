@@ -5,7 +5,7 @@
 event_inherited();
 
 name = "Diario de una ilusion";
-description = "Libro de adriana.\nParece tener algun poder de tierra.";
+description = "Una obra donde se encuentran relatos de hechos sucedidos, de pensamientos y de cosas por hacer.\nParece tener algun poder de tierra.";
 magic = Power.Earth;
 manaCost = 20;
 power1 = "Lightning Strike";

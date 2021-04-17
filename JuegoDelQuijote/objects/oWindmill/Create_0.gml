@@ -10,9 +10,12 @@ giantExists = false;
 sprMove = sGiant;
 sprStill = sWindmill;
 sprAttack = sGiantAttack;
+sprHurt = sGiantHurt;
 
 //Enemy Scripts
 enemyScript[ENEMYSTATE.WANDER] = WindmillWander;
 enemyScript[ENEMYSTATE.CHASE] = SlimeChase;
 enemyScript[ENEMYSTATE.ACT] = EnemyStateAct;
 enemyScript[ENEMYSTATE.ATTACK] = GiantAttack;
+enemyScript[ENEMYSTATE.HURT] = SlimeHurt;
+enemyScript[ENEMYSTATE.DIE] = SlimeDie;

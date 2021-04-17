@@ -26,6 +26,13 @@ AddItemToMasterList(["Flyte", sFlyte, Power.Wind, oFlyte]);
 AddItemToMasterList(["Diario de una ilusion", sDiarioDeIlusion, Power.Earth, oDiariosDeIlusion]);
 AddItemToMasterList(["Harry Potter", sHarryPotter, Power.Water, oHarryPotter]);
 AddItemToMasterList(["Hilo Rojo", sHiloRojo, Power.Fire, oHiloRojo]);
-
+AddItemToMasterList(["Narnia", sNarnia, Power.Fire, oNarnia]);
+AddItemToMasterList(["El Lazarillo de Tormes", sLazarillo, Power.Lightning, oLazarillo]);
+AddItemToMasterList(["Don Quijote de la Mancha", sQuijote, Power.Water, oDonQuijote]);
+AddItemToMasterList(["La chica invisible", sLaChicaInvisible, Power.Water, oChicaInvisible]);
+AddItemToMasterList(["La chica que patina y el tonto que la quiere", sChicaQuePatina, Power.Fire, oChicaQuePatina]);
+AddItemToMasterList(["After", sAfter, Power.Wind, oAfter]);
+AddItemToMasterList(["El Principito", sPrincipito, Power.Wind, oPrincipito])
+AddItemToMasterList(["Secreto", sSecreto, Power.Lightning, oSecreto]);
 
 display_set_gui_size(RESOLUTION_W,RESOLUTION_H);
