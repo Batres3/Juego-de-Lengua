@@ -60,6 +60,7 @@
     {"id":{"name":"Entity","path":"scripts/Entity/Entity.yy",},"order":4,},
     {"id":{"name":"NineSliceBoxStreched","path":"scripts/NineSliceBoxStreched/NineSliceBoxStreched.yy",},"order":1,},
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},"order":6,},
+    {"id":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},"order":7,},
     {"id":{"name":"sPlayerDie","path":"sprites/sPlayerDie/sPlayerDie.yy",},"order":11,},
     {"id":{"name":"oPrincipito","path":"objects/oPrincipito/oPrincipito.yy",},"order":14,},
     {"id":{"name":"oDulcinea","path":"objects/oDulcinea/oDulcinea.yy",},"order":8,},
@@ -164,6 +165,7 @@
     {"roomId":{"name":"rMolinos","path":"rooms/rMolinos/rMolinos.yy",},},
     {"roomId":{"name":"rVenta","path":"rooms/rVenta/rVenta.yy",},},
     {"roomId":{"name":"rVentaInterior","path":"rooms/rVentaInterior/rVentaInterior.yy",},},
+    {"roomId":{"name":"rVillage","path":"rooms/rVillage/rVillage.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
