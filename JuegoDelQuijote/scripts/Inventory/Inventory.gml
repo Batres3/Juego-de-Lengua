@@ -17,3 +17,8 @@ function ActivateLibrary(){
 	state = PlayerStateLocked;
 	instance_create_layer(0, 0, "Instances", oLibraryInventory);
 }
+
+function ActivateWanted() {
+	oJugador.state = PlayerStateLocked;
+	instance_create_layer(0, 0, "Instances", oWantedInventory);
+}

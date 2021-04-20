@@ -48,6 +48,8 @@ function DialogueResponses(response) {
 		case 5: NewTextBox("Me conto mi amo que esos villanos, hartos de comer ajos y cebollas, quemaron y salvaron los siguientes libros:", 1, ["6:Ensenar libros quemados", "7:Ensenar libros salvados"]); break;
 		case 6: NewTextBox(LibrosQuemar, 1); break;
 		case 7: NewTextBox(LibrosSalvar, 1); break;
+		case 8: NewTextBox("Te puedo decir todo lo que me encanta sobre Don Quijote de la Mancha", 1, ["0:No gracias.", "9: Poner cosas buenas del Quijote"]); break;
+		case 9: NewTextBox(CosasQuerer, 1); break;
 		default: break;
 	}
 }
