@@ -44,5 +44,9 @@ AddItemToMasterList(["La chica que patina y el tonto que la quiere", sChicaQuePa
 AddItemToMasterList(["After", sAfter, Power.Wind, oAfter]);
 AddItemToMasterList(["El Principito", sPrincipito, Power.Wind, oPrincipito])
 AddItemToMasterList(["Secreto", sSecreto, Power.Lightning, oSecreto]);
+AddItemToMasterList(["El Laberinto Cuantico", sLaberinto, Power.Lightning, oLaberinto]);
+AddItemToMasterList(["El Conde Lucanor", sCondeLucanor, Power.Lightning, oCondeLucanor]);
+AddItemToMasterList(["Crepusculo", sCrepusculo, Power.Lightning, oCrepusculo]);
+AddItemToMasterList(["El Psicoanalista", sPsicoanalista, Power.Lightning, oPsicoanalista]);
 
 display_set_gui_size(RESOLUTION_W,RESOLUTION_H);
